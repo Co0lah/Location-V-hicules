@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Location Véhicule Project</title>
+</head>
+
+<body>
+    <header class="flex flex-column padding">
+
+        <!----------------------------- BURGER MENU ----------------------->
+        <div class="flex justify-end">
+            <div id="burger_menu" class="flex flex-column align-center justify-center">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-------------------------- Scrolling menu ---------------------->
+
+        <div id="scrolling_menu">
+            <ul>
+                <li>
+                    <a href="#">Louer un Véhicule</a>
+                </li>
+                <li>
+                    <a href="#">Louer un Véhicule Commercial</a>
+                </li>
+                <li>
+                    <a href="#">Louer un Taxi</a>
+                </li>
+                <li>
+                    <a href="#">Découvrez notre Agence</a>
+                </li>
+                <li>
+                    <a href="#">Mon Compte</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="header_renting_part" class="flex flex-column align-center justify-between">
+
+            <!--------------------------- TOP PART ------------------------->
+            <div class="flex flex-column align-center">
+                <div>
+                    <h1 class="color_white">Bienvenue A Bord</h1>
+                </div>
+
+                <div>
+                    <p class="color_white">Location Véhicule 24h/24 7/7</p>
+                </div>
+            </div>
+
+            <!-------------------------- BOTTOM PART ------------------------>
+
+            <div>
+                <form action="#" id="rental_form" class="flex">
+
+                    <div id="pickup_part" class="flex">
+                        <select name="rentalSelection">
+                            <option value="none"> Choisissez une Location</option>
+                            <option value="paris"> Paris</option>
+                            <option value="madrid"> Dakar</option>
+                            <option value="lisboa"> Wogdugu</option>
+                            <option value="casablanca"> Lomé</option>
+                        </select>
+                        <input type="date" placeholder="Date de début">
+                        <input type="date" placeholder="Date de fin">
+                    </div>
+
+                    <div id="submitPart">
+                        <input type="submit" value="Rechercher">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="flex flex-column align-center padding">
+
+
+        <!------------------------------- FIRST PART FILTER ---------------------->
+        <div id="results" class="flex justify-between">
+
+            <!------------------------------- PARAM DYNAMIC RESULTS DISPLAY ---------------------->
+            <!-- <p> <span></span> Resultats</p> -->
+
+            <form action="#">
+                <select name="filter">
+                    <option value="Order by price">Trier par prix </option>
+                    <option value="Small Cars">Compacte</option>
+                    <option value="Large Cars">Monospaces</option>
+                    <option value="Premium Cars">SUV</option>
+                    <option value="Estate Cars">Breaks</option>
+                </select>
+            </form>
+        </div>
+
+        <!----------------------------- CARS --------------------------->
+
+        <!----------------------------- PERSISTENT VEHICULES --------------------------->
+
+        <!--------------------------------- CAR 1 ------------------------->
+        <div class="car_description flex align-center">
+            <!---------------------------- LEFT PART ----------------------------->
+            <div class="flex align-center">
+                <!------------------------------ LEFT ARROW --------------------------->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule1.png" alt="vehicule1">
+                        <img src="img/vehicule1.png" alt="vehicule2">
+                        <img src="img/vehicule1.png" alt="vehicule3">
+                    </div>
+                </div>
+                <!------------------------------- RIGHT ARROW --------------------------->
+                <div class="arrow_right"></div>
+            </div>
+
+            <!--------------------------------- RIGHT PART ------------------------->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Agence de Bordeaux</p>
+                <button>Afficher les détails</button>
+            </div>
+        </div>
+
+        <!------------------------------- CAR 2 -------------------------------->
+        <div class="car_description flex align-center">
+            <!------------------------- LEFT PART ----------------------------->
+            <div class="flex align-center">
+                <!--------------------------- LEFT ARROW ------------------------->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule2.png" alt="vehicule1">
+                        <img src="img/vehicule2.png" alt="vehicule2">
+                        <img src="img/vehicule2.png" alt="vehicule3">
+                    </div>
+                </div>
+                <!-------------------------- RIGHT ARROW ---------------------->
+                <div class="arrow_right"></div>
+            </div>
+
+            <!--------------------------- RIGHT PART ----------------------->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Agence de Bordeaux</p>
+                <button>Afficher les détails</button>
+            </div>
+        </div>
+
+
+        <!----------------------------- CAR 3 -------------------------->
+        <div class="car_description flex align-center">
+            <!------------------------------- LEFT PART --------------------->
+            <div class="flex align-center">
+                <!--------------------- LEFT ARROW -------------------------->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule3.png" alt="vehicule1">
+                        <img src="img/vehicule3.png" alt="vehicule2">
+                        <img src="img/vehicule3.png" alt="vehicule3">
+                    </div>
+                </div>
+                <!------------------------ RIGHT ARROW --------------------------->
+                <div class="arrow_right"></div>
+            </div>
+
+            <!-------------------------------- RIGHT PART ------------------------->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Agence de Bordeaux</p>
+                <button>Afficher les détails</button>
+            </div>
+        </div>
+
+        <!-------------------------------- CAR 4 ---------------------------->
+        <div class="car_description flex align-center">
+            <!-------------------------- LEFT PART ---------------------------->
+            <div class="flex align-center">
+                <!---------------------------- LEFT ARROW ------------------------->
+                <div class="arrow_left"></div>
+                <div class="img_outer">
+                    <div class="img_container flex">
+                        <img src="img/vehicule4.png" alt="vehicule1">
+                        <img src="img/vehicule4.png" alt="vehicule2">
+                        <img src="img/vehicule4.png" alt="vehicule3">
+                    </div>
+                </div>
+                <!------------------------------ RIGHT ARROW --------------------->
+                <div class="arrow_right"></div>
+            </div>
+
+            <!----------------------- RIGHT PART -------------------------->
+            <div class="car_details">
+                <h3>Peugeot 208</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>999 € - Agence de Bordeaux</p>
+                <button>Afficher les détails</button>
+            </div>
+        </div>
+
+
+        <!----------------------- Vehicules TO BE FADED ------------------->
+
+        <div class="toBeFaded">
+            <!--------------------------- CAR 1 --------------------->
+            <div class="car_description flex align-center">
+                <!------------------ LEFT PART ------------------->
+                <div class="flex align-center">
+                    <!------------------------- LEFT ARROW ------------------->
+                    <div class="arrow_left"></div>
+                    <div class="img_outer">
+                        <div class="img_container flex">
+                            <img src="img/vehicule5.png" alt="vehicule1">
+                            <img src="img/vehicule5.png" alt="vehicule2">
+                            <img src="img/vehicule5.png" alt="vehicule3">
+                        </div>
+                    </div>
+                    <!-------------------------- RIGHT ARROW ------------------>
+                    <div class="arrow_right"></div>
+                </div>
+
+                <!------------------------- RIGHT PART -------------------->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Agence de Bordeaux</p>
+                    <button>Afficher les détails</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toBeFaded">
+            <!------------------------------ CAR 2 -------------------------->
+            <div class="car_description flex align-center">
+                <!------------------------- LEFT PART ---------------------->
+                <div class="flex align-center">
+                    <!---------------------- LEFT ARROW --------------------->
+                    <div class="arrow_left"></div>
+                    <div class="img_outer">
+                        <div class="img_container flex">
+                            <img src="img/vehicule10.png" alt="vehicule1">
+                            <img src="img/vehicule10.png" alt="vehicule2">
+                            <img src="img/vehicule10.png" alt="vehicule3">
+                        </div>
+                    </div>
+                    <!------------------------- RIGHT ARROW ----------------->
+                    <div class="arrow_right"></div>
+                </div>
+
+                <!----------------------- RIGHT PART ------------------->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Agence de Bordeaux</p>
+                    <button>Afficher les détails</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toBeFaded">
+            <!---------------------------- CAR 3 ----------------------->
+            <div class="car_description flex align-center">
+                <!------------------------- LEFT PART ------------------------>
+                <div class="flex align-center">
+                    <!----------------------- LEFT ARROW ------------------->
+                    <div class="arrow_left"></div>
+                    <div class="img_outer">
+                        <div class="img_container flex">
+                            <img src="img/vehicule7.png" alt="vehicule1">
+                            <img src="img/vehicule7.png" alt="vehicule2">
+                            <img src="img/vehicule7.png" alt="vehicule3">
+                        </div>
+                    </div>
+                    <!-------------------- RIGHT ARROW -------------------->
+                    <div class="arrow_right"></div>
+                </div>
+
+                <!------------------------ RIGHT PART -------------------->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Agence de Bordeaux</p>
+                    <button>Afficher les détails</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toBeFaded">
+            <!------------------- CAR 4 --------------------->
+            <div class="car_description flex align-center">
+                <!-- LEFT PART -->
+                <div class="flex align-center">
+                    <!------------------- LEFT ARROW --------------->
+                    <div class="arrow_left"></div>
+                    <div class="img_outer">
+                        <div class="img_container flex">
+                            <img src="img/vehicule8.png" alt="vehicule1">
+                            <img src="img/vehicule8.png" alt="vehicule2">
+                            <img src="img/vehicule8.png" alt="vehicule3">
+                        </div>
+                    </div>
+                    <!-------------------- RIGHT ARROW ----------------->
+                    <div class="arrow_right"></div>
+                </div>
+
+                <!----------------------- RIGHT PART ----------------->
+                <div class="car_details">
+                    <h3>Peugeot 208</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <p>999 € - Agence de Bordeaux</p>
+                    <button>Afficher les détails</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="flex justify-center">
+
+        <img src="img/agence.jpg" alt="Agence">
+        <ul>
+            <li>
+                <p>Notre Agence</p>
+            </li>
+            <li>
+                <p>42 Boulevard de Gicouery 33000 Bordeaux</p>
+            </li>
+            <li>
+                <p>Ouvert 24h/24 7/7 - 14h and 20h</p>
+            </li>
+            <li>
+                <p>05 56 03 04 05</p>
+            </li>
+            <li>
+                <p>yagassa@mail.com</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/app.js" charset="utf-8"></script>
+</body>
+
+</html>
